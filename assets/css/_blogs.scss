@@ -1,0 +1,15 @@
+@import "./styles";
+
+.blogs {
+  h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: $m-25 $m-0;
+  }
+  p {
+    color: $color-secondary;
+    text-align: center;
+    font-size: $fs-40;
+  }
+}
