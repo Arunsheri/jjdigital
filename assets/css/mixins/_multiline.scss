@@ -1,0 +1,8 @@
+@mixin multi-line-ellipsis($line-count) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line-count;
+  line-clamp: $line-count;
+  -webkit-box-orient: vertical;
+}

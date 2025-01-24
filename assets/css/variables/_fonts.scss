@@ -1,0 +1,27 @@
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-22: 22px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-30: 30px;
+$fs-32: 32px;
+$fs-40: 40px;
+$fs-50: 50px;
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-bold: bold;
+
+@font-face {
+  $font-millibus: "Millibus", sans-serif;
+  src: url(../../fonts/Milibus-Regular.ttf) format(truetype);
+  font-style: normal;
+}
+
+$font-millibus: "Millibus", sans-serif;

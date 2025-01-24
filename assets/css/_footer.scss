@@ -1,0 +1,90 @@
+@import "./styles";
+
+footer {
+  margin-top: auto;
+  background-color: $bg-secondary;
+
+  .footer-content {
+    padding: $p-15 $p-0;
+
+    li {
+      margin: $m-10 $m-0;
+      color: $color-white;
+      font-size: $fs-16;
+      font-weight: $fw-500;
+      letter-spacing: 0.2px;
+
+      span {
+        color: $color-white;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+        display: flex;
+        padding-right: $p-20;
+      }
+
+      a {
+        color: $color-white;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: $color-primary;
+        }
+      }
+
+      h3 {
+        color: $color-white;
+        font-size: $fs-18;
+        font-weight: $fw-500;
+        border-bottom: $border-1 solid $border-primary;
+        display: inline;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      margin: $m-20 $m-0;
+
+      li {
+        margin: $m-0 $m-10 $m-0 $m-0;
+        background-color: $bg-white;
+        width: 35px;
+        height: 35px;
+        border-radius: $border-5;
+        @extend %flex-center-align-center;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .rating-list {
+      display: flex;
+
+      li {
+        margin: $m-0 $m-10 $m-0 $m-0;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .copy-rights {
+    text-align: center;
+    color: $color-white;
+    font-size: $fs-14;
+    margin: $m-10 $m-0;
+    letter-spacing: 0.5px;
+    font-weight: $fw-500;
+    span {
+      color: $color-primary;
+      font-weight: $fw-700;
+      letter-spacing: 0.5px;
+    }
+  }
+}

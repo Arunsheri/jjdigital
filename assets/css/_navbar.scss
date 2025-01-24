@@ -1,0 +1,124 @@
+@import "./styles";
+
+header {
+  background-color: $bg-white;
+  padding: $p-5 $p-0;
+  width: $w-100;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.nav-exapnd-lg {
+  @extend %flex-between-align-center;
+}
+.logo {
+  width: 250px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: $color-secondary;
+  cursor: pointer;
+  display: none;
+  height: 24px;
+  width: 30px;
+  position: absolute;
+  right: 15px;
+  @include media-breakpoint-down($md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.bar {
+  background: $bg-primary;
+  height: 2px;
+  width: $w-100;
+  border-radius: $border-2;
+  margin: 2px;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: $color-white;
+  font-size: $fs-40;
+  cursor: pointer;
+}
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: $bg-secondary;
+  color: $color-white;
+  overflow: auto;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  @extend %flex-column;
+  @include media-breakpoint-up($lg) {
+    display: none;
+  }
+  .header {
+    @extend %flex-between-align-center;
+  }
+  .list {
+    li {
+      margin: $m-15 $m-0;
+      a {
+        color: $color-white;
+        padding: $p-5;
+        display: block;
+        text-transform: uppercase;
+        font-size: $fs-16;
+        font-weight: $fw-500;
+      }
+    }
+  }
+}
+
+.nav-links {
+  display: none;
+  margin-left: auto;
+  align-items: center;
+  @include media-breakpoint-up($lg) {
+    display: flex;
+    li {
+      margin: $m-0 $m-5;
+    }
+
+    li a {
+      color: $color-secondary;
+      padding: $p-5;
+      display: block;
+      text-transform: uppercase;
+      font-size: $fs-14;
+      font-weight: $fw-600;
+      letter-spacing: 0.5px;
+      @include media-breakpoint-down($lg) {
+        font-size: $fs-14;
+        padding: $p-0;
+      }
+    }
+  }
+  .auth-btn {
+    color: $color-black;
+    background-color: $bg-white;
+    border-radius: $border-5;
+    border: none;
+    padding: $p-5 $p-8;
+  }
+}
+
+@include media-breakpoint-down($lg) {
+  .open {
+    left: 0;
+  }
+}

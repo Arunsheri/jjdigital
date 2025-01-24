@@ -1,0 +1,5 @@
+# Ignore the globals.css.map file
+globals.css.map
+
+# Ignore the globals.scss file
+globals.scss

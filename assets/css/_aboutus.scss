@@ -1,0 +1,25 @@
+@import "./styles";
+
+.vision_mission {
+  margin: $m-30 $m-0;
+  text-align: center;
+  .col-lg-4 {
+    &:nth-last-child(1) {
+      border-right: none;
+    }
+    @include media-breakpoint-up($md) {
+      border-right: $border-1 solid $border-secondary;
+    }
+  }
+  h3 {
+    color: $color-primary;
+    margin: $m-10 $m-0;
+  }
+  img {
+    margin: $m-10 $m-0;
+  }
+  p {
+    font-size: $fs-16;
+    letter-spacing: 0.2px;
+  }
+}

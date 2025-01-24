@@ -1,0 +1,26 @@
+//Note: Reference Breakpoints
+//Breakpoints
+// $xs: 0px;     Extra small devices
+// $sm: 576px;   Small devices
+// $md: 768px;   Medium devices
+// $lg: 992px;   Large devices
+// $xl: 1200px;  Extra large devices
+// $xxl: 1400px; Extra-extra large devices
+
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-between($start, $end) {
+  @media (min-width: $start) and (max-width: $end) {
+    @content;
+  }
+}

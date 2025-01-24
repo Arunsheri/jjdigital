@@ -1,0 +1,169 @@
+@import "./styles";
+//ABOUT US START
+.about_us {
+  margin: $m-50 $m-0;
+  text-align: center;
+  h2 {
+    color: $color-primary;
+    font-weight: $fw-700;
+    font-size: $fs-30;
+    letter-spacing: 0.5px;
+    margin: $m-15 $m-0;
+  }
+  h4 {
+    color: $color-secondary;
+    font-weight: $fw-500;
+    font-size: $fs-22;
+    margin: $m-10 $m-0;
+  }
+  h6 {
+    color: $color-black;
+    font-weight: $fw-500;
+    font-size: $fs-20;
+    line-height: 20px;
+    margin: $m-10 $m-0;
+    letter-spacing: 0.2px;
+    span {
+      color: $color-primary;
+      font-weight: $fw-600;
+    }
+  }
+  p {
+    color: $color-black;
+    font-size: $fs-18;
+    letter-spacing: 0.1px;
+    margin: $m-20 $m-0;
+    strong {
+      color: $color-primary;
+    }
+  }
+}
+//ABOUT US END
+
+//OUR PARTNER START
+.our_services {
+  margin: $m-30 $m-0;
+  h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: $m-15 $m-0;
+  }
+  p {
+    color: $color-black;
+    text-align: center;
+    font-size: $fs-18;
+    margin-bottom: $m-30;
+  }
+  .card {
+    padding: $p-40 $p-35;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: $border-5 $border-5 $border-30 $border-5;
+    border-top: $border-5 solid $border-primary;
+    h3 {
+      color: $color-primary;
+      font-size: $fs-20;
+      font-weight: $fw-600;
+      letter-spacing: 0.2px;
+      margin: $m-10 $m-0;
+    }
+    p {
+      font-size: $fs-16;
+      letter-spacing: 0.2px;
+      line-height: 20px;
+      text-align: start;
+      @include multi-line-ellipsis(7);
+      margin: $m-20 $m-0;
+    }
+  }
+}
+//OUR PARTNER END
+
+//OUR PARTNER START
+.our_partner {
+  background-color: $bg-primary;
+  padding: $p-40 $p-10;
+  margin: $m-30 $m-0;
+  h2 {
+    color: $color-white;
+    font-size: $fs-24;
+    font-weight: $fw-600;
+    text-transform: uppercase;
+    margin: $m-20 $m-0;
+  }
+  p {
+    color: $color-white;
+    font-size: $fs-16;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin: $m-10 $m-0;
+    a {
+      color: $color-secondary;
+      font-weight: $fw-600;
+      font-size: $fs-18;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .image_container {
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-radius: $border-5;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $bg-secondary;
+      border-radius: 5px;
+      height: 100px;
+    }
+  }
+
+  .image_container img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: $border-5;
+  }
+}
+//OUR PARTNER END
+
+//OUR ACHIEVEMENTS START
+.achievements-section {
+  margin: $m-30 $m-0;
+  h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: $m-15 $m-0;
+  }
+  p {
+    color: $color-black;
+    text-align: center;
+    font-size: $fs-18;
+    margin-bottom: $m-30;
+  }
+  .stats {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    padding: $p-30 $p-10;
+    h3 {
+      font-size: $fs-30;
+      font-weight: $fw-600;
+      color: $color-secondary;
+    }
+    p {
+      font-size: $fs-16;
+      letter-spacing: 0.2px;
+      font-weight: $fw-600;
+      margin: $m-10 $m-0;
+    }
+  }
+}
+//OUR ACHIEVEMENT END
