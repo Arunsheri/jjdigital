@@ -61,6 +61,7 @@
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: $border-5 $border-5 $border-30 $border-5;
     border-top: $border-5 solid $border-primary;
+    height: $h-100;
     h3 {
       color: $color-primary;
       font-size: $fs-20;
@@ -109,7 +110,7 @@
   }
   .image_container {
     height: 300px;
-    width: 100%;
+    width: $w-100;
     overflow-y: scroll;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -126,7 +127,7 @@
 
   .image_container img {
     height: auto;
-    width: 100%;
+    width: $w-100;
     object-fit: cover;
     border-radius: $border-5;
   }
@@ -153,6 +154,7 @@
       rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     text-align: center;
     padding: $p-30 $p-10;
+    height: $h-100;
     h3 {
       font-size: $fs-30;
       font-weight: $fw-600;

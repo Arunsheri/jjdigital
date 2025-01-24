@@ -1,0 +1,30 @@
+@import "./styles";
+
+.services-section {
+  h2 {
+    color: $color-primary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: $m-15 $m-0;
+  }
+  p {
+    color: $color-black;
+    text-align: center;
+    font-size: $fs-18;
+    margin-bottom: $m-30;
+  }
+  .services-container {
+    text-align: center;
+    h3 {
+      color: $color-primary;
+      text-transform: capitalize;
+      text-align: center;
+      margin: $m-15 $m-0;
+    }
+    p {
+      color: $color-black;
+      font-size: $fs-16;
+      letter-spacing: 0.2px;
+    }
+  }
+}

@@ -12,6 +12,14 @@
     color: $color-secondary;
     font-weight: $fw-600;
     letter-spacing: 0.2px;
+    img {
+      border-radius: $border-5;
+      position: relative;
+    }
+    p {
+      position: absolute;
+      color: $color-white;
+    }
   }
   ul {
     li {

@@ -6,6 +6,7 @@ footer {
 
   .footer-content {
     padding: $p-15 $p-0;
+    border-bottom: $border-1 solid rgba($border-lighterGrey, 0.5);
 
     li {
       margin: $m-10 $m-0;
