@@ -3586,6 +3586,7 @@ body, .offcanvas-menu {
 }
 .services-section .services-container {
   text-align: center;
+  padding: 0px 20px;
 }
 .services-section .services-container h3 {
   color: #2dace1;
@@ -3596,7 +3597,7 @@ body, .offcanvas-menu {
 .services-section .services-container p {
   color: #000000;
   font-size: 16px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
 }
 
 * {

@@ -15,6 +15,7 @@
   }
   .services-container {
     text-align: center;
+    padding: $p-0 $p-20;
     h3 {
       color: $color-primary;
       text-transform: capitalize;
@@ -24,7 +25,7 @@
     p {
       color: $color-black;
       font-size: $fs-16;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.5px;
     }
   }
 }
