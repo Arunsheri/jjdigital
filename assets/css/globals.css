@@ -2250,6 +2250,8 @@ body, .offcanvas-menu {
 .contact_us .brand_name img {
   border-radius: 5px;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contact_us .brand_name p {
   position: absolute;
