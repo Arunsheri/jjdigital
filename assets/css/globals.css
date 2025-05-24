@@ -1018,8 +1018,39 @@ body, .offcanvas-menu {
   align-items: center;
 }
 
+.sub_heading {
+  color: #3156a6;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 10px 0px;
+}
+
+.sub_heading2 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 10px 0px;
+  letter-spacing: 0.2px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.card {
+  padding: 40px 20px;
+  box-shadow: 0px 0px 10px 1px rgba(60, 64, 67, 0.3);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
 .about_us {
-  margin: 50px 0px;
+  margin: 60px 0px;
   text-align: center;
 }
 .about_us h2 {
@@ -1048,9 +1079,7 @@ body, .offcanvas-menu {
   font-weight: 600;
 }
 .about_us p {
-  color: #000000;
   font-size: 18px;
-  letter-spacing: 0.1px;
   margin: 20px 0px;
 }
 .about_us p strong {
@@ -1058,19 +1087,13 @@ body, .offcanvas-menu {
 }
 
 .our_services {
-  margin: 30px 0px;
+  margin: 80px 0px;
 }
 .our_services h2 {
   color: #2dace1;
   text-transform: uppercase;
   text-align: center;
   margin: 15px 0px;
-}
-.our_services p {
-  color: #000000;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
 }
 .our_services .card {
   padding: 40px 35px;
@@ -1087,16 +1110,7 @@ body, .offcanvas-menu {
   margin: 10px 0px;
 }
 .our_services .card p {
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 20px;
   text-align: start;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 7;
-  line-clamp: 7;
-  -webkit-box-orient: vertical;
   margin: 20px 0px;
 }
 
@@ -1114,15 +1128,13 @@ body, .offcanvas-menu {
 }
 .our_partner p {
   color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
   margin: 10px 0px;
+  font-size: 18px;
 }
 .our_partner p a {
-  color: #3156a6;
+  color: #ffffff;
   font-weight: 600;
-  font-size: 18px;
+  text-decoration: underline;
 }
 .our_partner p a:hover {
   text-decoration: underline;
@@ -1152,7 +1164,7 @@ body, .offcanvas-menu {
 }
 
 .achievements-section {
-  margin: 30px 0px;
+  margin: 80px 0px;
 }
 .achievements-section h2 {
   color: #2dace1;
@@ -1175,7 +1187,7 @@ body, .offcanvas-menu {
 .achievements-section .stats h3 {
   font-size: 30px;
   font-weight: 600;
-  color: #3156a6;
+  color: #2dace1;
 }
 .achievements-section .stats p {
   font-size: 16px;
@@ -1833,11 +1845,11 @@ body, .offcanvas-menu {
 
 footer {
   margin-top: auto;
-  background-color: #3156a6;
+  background-color: #0d3a4d;
 }
 footer .footer-content {
   padding: 15px 0px;
-  border-bottom: 1px solid rgba(246, 246, 246, 0.5);
+  border-bottom: 1px solid rgba(246, 246, 246, 0.2);
 }
 footer .footer-content li {
   margin: 10px 0px;
@@ -1847,24 +1859,39 @@ footer .footer-content li {
   letter-spacing: 0.2px;
 }
 footer .footer-content li span {
-  color: #ffffff;
-  letter-spacing: 0.2px;
-  line-height: 25px;
+  color: #e7e7e7;
   display: flex;
   padding-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
 footer .footer-content li a {
   color: #ffffff;
 }
+footer .footer-content li a.footer-logo-wrapper {
+  width: 140px;
+  display: block;
+}
+footer .footer-content li a.footer-logo-wrapper img {
+  width: 100%;
+  height: auto;
+}
+footer .footer-content li a i {
+  color: #ffffff;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 footer .footer-content li a:hover {
   text-decoration: underline;
-  text-decoration-color: #2dace1;
+  text-decoration-color: #ffffff;
 }
 footer .footer-content li h3 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
-  border-bottom: 1px solid #2dace1;
+  border-bottom: 1px solid #ffffff;
   display: inline;
   letter-spacing: 0.2px;
 }
@@ -1902,7 +1929,7 @@ footer .copy-rights {
   font-weight: 500;
 }
 footer .copy-rights span {
-  color: #2dace1;
+  color: #ffffff;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -2208,7 +2235,7 @@ body, .offcanvas-menu {
 
 .contact_us {
   margin: 30px 0px;
-  border: 2px solid #3156a6;
+  border: 2px solid #2dace1;
   border-radius: 5px;
   padding: 10px;
 }
@@ -2573,6 +2600,16 @@ body, .offcanvas-menu {
   align-items: center;
 }
 
+.about-us-page {
+  margin-top: 50px;
+}
+.about-us-page h4 {
+  margin-bottom: 40px;
+}
+.about-us-page h6 {
+  margin-top: 30px;
+}
+
 .vision_mission {
   margin: 50px 0px;
   text-align: center;
@@ -2582,7 +2619,7 @@ body, .offcanvas-menu {
 }
 @media (min-width: 768px) {
   .vision_mission .col-lg-4 {
-    border-right: 1px solid #3156a6;
+    border-right: 1px solid #d4d4d4;
   }
 }
 .vision_mission h3 {
@@ -2919,8 +2956,11 @@ body, .offcanvas-menu {
 
 .accordion-item {
   border: 2px solid #f6f6f6;
-  margin: 20px 0px;
+  margin: 10px 0px;
   border-radius: 5px;
+}
+.accordion-item:first-child {
+  margin-top: 25px;
 }
 
 .accordion-header .arrow {
@@ -2931,7 +2971,7 @@ body, .offcanvas-menu {
   border-right: 2px solid #3156a6;
   border-bottom: 2px solid #3156a6;
   transform: rotate(45deg);
-  transition: transform 2s ease;
+  transition: transform 0.5s ease;
 }
 
 .active .accordion-header {
@@ -2945,7 +2985,7 @@ body, .offcanvas-menu {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
   background-color: #ffffff;
 }
 
@@ -3572,39 +3612,41 @@ body, .offcanvas-menu {
   align-items: center;
 }
 
+.services-section {
+  margin-block: 50px;
+}
+.services-section .intro {
+  margin-bottom: 50px;
+}
 .services-section h2 {
   color: #2dace1;
   text-transform: uppercase;
   text-align: center;
   margin: 15px 0px;
 }
-.services-section p {
-  color: #000000;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
 .services-section .services-container {
   text-align: center;
   padding: 0px 20px;
 }
 .services-section .services-container h3 {
-  color: #2dace1;
+  color: #3156a6;
   text-transform: capitalize;
   text-align: center;
   margin: 15px 0px;
-}
-.services-section .services-container p {
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0.5px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Millibus", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  color: #454545;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 li {
@@ -3634,6 +3676,10 @@ body {
 .breadcrumb {
   background-color: #2dace1;
   padding: 8px;
+}
+.breadcrumb i.fas {
+  color: #ffffff;
+  font-size: 0.8rem;
 }
 .breadcrumb span {
   margin: 0px 5px;

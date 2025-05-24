@@ -1,5 +1,17 @@
 @import "./styles";
 
+.about-us-page {
+  margin-top: $m-50;
+
+  h4 {
+    margin-bottom: $m-40;
+  }
+
+  h6 {
+    margin-top: $m-30;
+  }
+}
+
 .vision_mission {
   margin: $m-50 $m-0;
   text-align: center;
@@ -8,7 +20,7 @@
       border-right: none;
     }
     @include media-breakpoint-up($md) {
-      border-right: $border-1 solid $border-secondary;
+      border-right: $border-1 solid $border-light-gray;
     }
   }
   h3 {

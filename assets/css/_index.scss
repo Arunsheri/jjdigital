@@ -1,7 +1,38 @@
 @import "./styles";
+.sub_heading {
+  color: #3156a6;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 10px 0px;
+}
+
+.sub_heading2 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 10px 0px;
+  letter-spacing: 0.2px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.card {
+  padding: 40px 20px;
+  box-shadow: 0px 0px 10px 1px rgba(60, 64, 67, 0.3);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
 //ABOUT US START
 .about_us {
-  margin: $m-50 $m-0;
+  margin: $m-60 $m-0;
   text-align: center;
   h2 {
     color: $color-primary;
@@ -29,9 +60,7 @@
     }
   }
   p {
-    color: $color-black;
     font-size: $fs-18;
-    letter-spacing: 0.1px;
     margin: $m-20 $m-0;
     strong {
       color: $color-primary;
@@ -42,19 +71,14 @@
 
 //OUR PARTNER START
 .our_services {
-  margin: $m-30 $m-0;
+  margin: $m-80 $m-0;
   h2 {
     color: $color-primary;
     text-transform: uppercase;
     text-align: center;
     margin: $m-15 $m-0;
   }
-  p {
-    color: $color-black;
-    text-align: center;
-    font-size: $fs-18;
-    margin-bottom: $m-30;
-  }
+
   .card {
     padding: $p-40 $p-35;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -70,11 +94,7 @@
       margin: $m-10 $m-0;
     }
     p {
-      font-size: $fs-16;
-      letter-spacing: 0.2px;
-      line-height: 20px;
       text-align: start;
-      @include multi-line-ellipsis(7);
       margin: $m-20 $m-0;
     }
   }
@@ -95,14 +115,12 @@
   }
   p {
     color: $color-white;
-    font-size: $fs-16;
-    letter-spacing: 0.5px;
-    line-height: 20px;
     margin: $m-10 $m-0;
+    font-size: $fs-18;
     a {
-      color: $color-secondary;
+      color: $color-white;
       font-weight: $fw-600;
-      font-size: $fs-18;
+      text-decoration: underline;
       &:hover {
         text-decoration: underline;
       }
@@ -136,7 +154,7 @@
 
 //OUR ACHIEVEMENTS START
 .achievements-section {
-  margin: $m-30 $m-0;
+  margin: $m-80 $m-0;
   h2 {
     color: $color-primary;
     text-transform: uppercase;
@@ -158,7 +176,7 @@
     h3 {
       font-size: $fs-30;
       font-weight: $fw-600;
-      color: $color-secondary;
+      color: $color-primary;
     }
     p {
       font-size: $fs-16;

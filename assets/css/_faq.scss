@@ -23,8 +23,11 @@
   font-weight: $fw-600;
 }
 .accordion-item {
+  &:first-child {
+    margin-top: $m-25;
+  }
   border: 2px solid $border-lighterGrey;
-  margin: $m-20 $m-0;
+  margin: $m-10 $m-0;
   border-radius: $border-5;
 }
 .accordion-header .arrow {
@@ -35,7 +38,7 @@
   border-right: $border-2 solid $border-secondary;
   border-bottom: $border-2 solid $border-secondary;
   transform: rotate(45deg);
-  transition: transform 2s ease;
+  transition: transform 0.5s ease;
 }
 
 .active .accordion-header {
@@ -49,7 +52,7 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
   background-color: $bg-white;
 }
 

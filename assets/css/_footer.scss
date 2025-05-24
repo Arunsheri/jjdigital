@@ -2,11 +2,11 @@
 
 footer {
   margin-top: auto;
-  background-color: $bg-secondary;
+  background-color: #0d3a4d;
 
   .footer-content {
     padding: $p-15 $p-0;
-    border-bottom: $border-1 solid rgba($border-lighterGrey, 0.5);
+    border-bottom: $border-1 solid rgba($border-lighterGrey, 0.2);
 
     li {
       margin: $m-10 $m-0;
@@ -16,19 +16,37 @@ footer {
       letter-spacing: 0.2px;
 
       span {
-        color: $color-white;
-        letter-spacing: 0.2px;
-        line-height: 25px;
+        color: $color-teritary;
         display: flex;
         padding-right: $p-20;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
       }
 
       a {
         color: $color-white;
 
+        &.footer-logo-wrapper {
+          width: 140px;
+          display: block;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        i {
+          color: $color-white;
+          font-size: $fs-12;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
         &:hover {
           text-decoration: underline;
-          text-decoration-color: $color-primary;
+          text-decoration-color: $color-white;
         }
       }
 
@@ -36,7 +54,7 @@ footer {
         color: $color-white;
         font-size: $fs-18;
         font-weight: $fw-500;
-        border-bottom: $border-1 solid $border-primary;
+        border-bottom: $border-1 solid $border-white;
         display: inline;
         letter-spacing: 0.2px;
       }
@@ -83,7 +101,7 @@ footer {
     letter-spacing: 0.5px;
     font-weight: $fw-500;
     span {
-      color: $color-primary;
+      color: $color-white;
       font-weight: $fw-700;
       letter-spacing: 0.5px;
     }

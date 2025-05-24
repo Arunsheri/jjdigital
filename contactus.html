@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/globals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/globals.css" />
   </head>
   <body>
     <header>
@@ -12,12 +25,7 @@
         <div class="container">
           <div class="nav-exapnd-lg">
             <a href="index.html"
-              ><img
-                src="./assets/images/logo.jpg"
-                class="logo"
-                alt=""
-                width="280px"
-                height="70px"
+              ><img src="./assets/images/logo.png" class="logo" alt=""
             /></a>
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
@@ -37,7 +45,7 @@
           <div class="offcanvas-menu">
             <div class="header">
               <a href=""
-                ><img src="./assets/images/logo.jpg" class="logo" alt=""
+                ><img src="./assets/images/logo.png" class="logo" alt=""
               /></a>
               <button class="close-btn" aria-label="Close menu">&times;</button>
             </div>
@@ -58,14 +66,14 @@
         <div class="breadcrumb">
           <div class="container">
             <a href="/index.html">Home</a>
-            <span>|</span>
+            <span><i class="fas fa-chevron-right"></i></span>
             <a href="#">Contact Us</a>
           </div>
         </div>
       </section>
       <section>
         <div class="container">
-          <div class="row contact_us">
+          <div class="row contact_us card">
             <div class="col-lg-4 col-md-4 col-sm-12 brand_name">
               <img
                 src="./assets/images/office.jpg"
@@ -137,12 +145,8 @@
           <div class="col-lg-5 col-md-6 p-2">
             <ul>
               <li>
-                <a href="index.html"
-                  ><img
-                    src="./assets/images/logo.jpg"
-                    width="250px"
-                    height="70px"
-                    alt=""
+                <a href="index.html" class="footer-logo-wrapper"
+                  ><img src="./assets/images/logo.png" alt=""
                 /></a>
               </li>
               <li>
@@ -164,16 +168,36 @@
           <div class="col-lg-2 col-md-6 p-2">
             <ul>
               <li><h3>Insights</h3></li>
-              <li><a href="aboutus.html">About</a></li>
-              <li><a href="blogs.html">Blog</a></li>
-              <li><a href="services.html">Services</a></li>
+              <li>
+                <a href="aboutus.html">
+                  <i class="fas fa-long-arrow-alt-right"></i> About</a
+                >
+              </li>
+              <li>
+                <a href="blogs.html"
+                  ><i class="fas fa-long-arrow-alt-right"></i> Blog</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-long-arrow-alt-right"></i> Services</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 p-2">
             <ul>
               <li><h3>Assistance</h3></li>
-              <li><a href="">info@jjds.com</a></li>
-              <li><a href="contactus.html">Contact Us</a></li>
+              <li>
+                <a href="mailto:info@jjds.com"
+                  ><i class="fas fa-long-arrow-alt-right"></i> info@jjds.com</a
+                >
+              </li>
+              <li>
+                <a href="contactus.html"
+                  ><i class="fas fa-long-arrow-alt-right"></i> Contact Us</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 p-2">
@@ -202,15 +226,17 @@
                 /></a>
               </li>
             </ul>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3856454339393!2d78.43823447594065!3d17.441246601249667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db35d462bd%3A0x750c028b937a7336!2sIndia%20Post%20Office%20-%20Vengalrao%20Nagar!5e0!3m2!1sen!2sin!4v1737617195863!5m2!1sen!2sin"
-              width="100%"
-              height="250"
-              style="border: 0; border-radius: 5px"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3856454339393!2d78.43823447594065!3d17.441246601249667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db35d462bd%3A0x750c028b937a7336!2sIndia%20Post%20Office%20-%20Vengalrao%20Nagar!5e0!3m2!1sen!2sin!4v1737617195863!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style="border: 0; border-radius: 5px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </li>
           </div>
         </div>
         <div class="copy-rights">
